@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>AiVideo</class>
+	<widget class="QMainWindow" name="AiVideo">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>740</width>
+				<height>427</height>
+			</rect>
+		</property>
+		<widget class="QWidget" name="centralWidget">
+			<layout class="QHBoxLayout" name="mainLayout">
+				<item>
+					<layout class="QVBoxLayout" name="leftPanelLayout">
+						<item>
+							<widget class="QLabel" name="label">
+								<property name="text">
+									<string>Введите ваш запрос для редактирования видео:</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<widget class="QTextEdit" name="instructionText"/>
+						</item>
+						<item>
+							<widget class="QPushButton" name="runButton">
+								<property name="text">
+									<string>Выполнить</string>
+								</property>
+							</widget>
+						</item>
+					</layout>
+				</item>
+				<item>
+					<layout class="QVBoxLayout" name="centerPanelLayout">
+						<item>
+							<widget class="QWidget" name="videoFrame" native="true"/>
+						</item>
+						<item>
+							<widget class="QSlider" name="videoSlider"/>
+						</item>
+						<item>
+							<layout class="QHBoxLayout" name="controlsLayout">
+								<!-- Кнопки управления -->
+							</layout>
+						</item>
+						<item>
+							<layout class="QHBoxLayout" name="videoButtonsLayout">
+								<item>
+									<widget class="QPushButton" name="importButton">
+										<property name="text">
+											<string>Импортировать видео</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QPushButton" name="recognizeButton">
+										<property name="text">
+											<string>Распознать субтитры</string>
+										</property>
+									</widget>
+								</item>
+								<item>
+									<widget class="QPushButton" name="editButton">
+										<property name="text">
+											<string>Редактировать вручную</string>
+										</property>
+									</widget>
+								</item>
+							</layout>
+						</item>
+					</layout>
+
+				</item>
+				<item>
+					<layout class="QVBoxLayout" name="rightPanelLayout">
+						<item>
+							<widget class="QPushButton" name="importButton">
+								<property name="text">
+									<string>Импортировать видео</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<widget class="QPushButton" name="recognizeButton">
+								<property name="text">
+									<string>Распознать субтитры</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<widget class="QPushButton" name="editButton">
+								<property name="text">
+									<string>Редактировать вручную</string>
+								</property>
+							</widget>
+						</item>
+					</layout>
+				</item>
+			</layout>
+		</widget>
+		<widget class="QStatusBar" name="statusBar"/>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>

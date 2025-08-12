@@ -1,0 +1,14 @@
+nenado/
+resourcess/
+x64/
+*.mp4
+*.wav
+*.avi
+output.*
+temp*.mp4
+concat_list.txt
+ffmpeg_cmd.txt
+*.bin
+*.dll
+*.wav
+*.exe
